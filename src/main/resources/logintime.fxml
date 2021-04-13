@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@css/index.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bing.controller.Controller">
+   <children>
+      <AnchorPane fx:id="logintop" prefHeight="214.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="270.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="登陆">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text layoutX="142.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="143.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密   码:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username" layoutX="220.0" layoutY="284.0" prefHeight="32.0" prefWidth="187.0" promptText="请输入手机号" />
+      <Button fx:id="login" layoutX="243.0" layoutY="417.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="38.0" prefWidth="115.0" text="登陆">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password" layoutX="220.0" layoutY="338.0" prefHeight="32.0" prefWidth="187.0" promptText="请输入密码" />
+      <Text fx:id="tishi" fill="RED" layoutX="208.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

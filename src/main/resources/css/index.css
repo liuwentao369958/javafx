@@ -1,0 +1,7 @@
+#logintop{
+    -fx-background-image: url("/images/login.jpg");
+    -fx-background-size: cover;
+}
+#tishi{
+    -fx-alignment: center;
+}

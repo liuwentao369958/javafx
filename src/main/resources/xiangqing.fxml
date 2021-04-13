@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bing.controller.XQcontroller">
+   <children>
+      <GridPane layoutX="10.0" layoutY="5.0" prefHeight="400.0" prefWidth="478.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="342.0" minWidth="10.0" prefWidth="128.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="580.0" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="580.0" minWidth="0.0" prefWidth="27.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="580.0" minWidth="10.0" prefWidth="95.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="580.0" minWidth="8.0" prefWidth="232.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="73.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="155.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="160.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="167.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="172.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="173.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="175.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="175.0" minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="175.0" minHeight="17.0" prefHeight="102.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="订单编号">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="供货名" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="订单类型" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="创建时间" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="商品规格" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="状态" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="供货时间" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="备注" GridPane.rowIndex="9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ddhao" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="ddname" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="ddtype" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="ddtime" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="ddjiage" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="start" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="gonghuotime" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextArea fx:id="beizhu" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label text="发布人" GridPane.columnIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="供货分类" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="数量" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="单价" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="总价" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="实际数量" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="供货地点" GridPane.rowIndex="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="实际总价" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="采购点" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="型号" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="gonghuodidian" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="caigoudian" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="faburen" editable="false" GridPane.columnIndex="4" />
+            <TextField fx:id="gonghuofenlei" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="shuliang" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <TextField fx:id="danjia" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <TextField fx:id="zongjia" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <TextField fx:id="shijishuliang" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="shijidanjia" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TextField fx:id="shijizongliang" editable="false" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <TextField editable="false" GridPane.columnIndex="4" GridPane.rowIndex="8" fx:id="xinaghao" />
+            <Button fx:id="tuichu" mnemonicParsing="false" prefHeight="35.0" prefWidth="88.0" text="退出" GridPane.columnIndex="4" GridPane.rowIndex="9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label text="实际单价" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

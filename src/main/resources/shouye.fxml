@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@css/jiemian.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bing.controller.ShouyeController">
+    <left>
+        <GridPane prefHeight="600.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="10.0" prefWidth="190.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.0" minWidth="9.0" prefWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="295.0" minHeight="10.0" prefHeight="206.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="486.0" minHeight="10.0" prefHeight="394.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Pane fx:id="candantop" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="147.0" layoutX="22.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="userNAME" alignment="CENTER" layoutY="192.0" prefHeight="15.0" prefWidth="190.0" text="用户 :" textFill="#fffdfd" />
+                    </children>
+                </Pane>
+                <Pane fx:id="caidan" prefHeight="421.0" prefWidth="190.0" GridPane.rowIndex="1">
+                    <children>
+                        <Hyperlink fx:id="shouye" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutY="191.0" onAction="#handleShowView" prefHeight="35.0" prefWidth="190.0" text="称重记录" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" userData="/Weighingrecord.fxml">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                        </Hyperlink>
+                        <Hyperlink fx:id="GHdingdan" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" focusTraversable="false" layoutX="1.0" layoutY="121.0" onAction="#handleShowView" prefHeight="35.0" prefWidth="190.0" text="供货订单" textFill="WHITE" userData="/FxmlPagerSample.fxml">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                        </Hyperlink>
+                        <Hyperlink fx:id="CGdingdan" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="1.0" layoutY="156.0" onAction="#handleShowView" prefHeight="35.0" prefWidth="190.0" text="采购订单" textFill="#ecf2ef" userData="/CGdingdan.fxml">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                        </Hyperlink>
+                  <Button fx:id="logout" layoutX="33.0" layoutY="363.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="118.0" text="退出登录" />
+                  <ImageView fx:id="serialport" fitHeight="30.0" fitWidth="30.0" layoutX="39.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="mesh" fitHeight="30.0" fitWidth="30.0" layoutX="121.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" />
+                  <Separator layoutX="1.0" layoutY="12.0" prefHeight="0.0" prefWidth="190.0" />
+                  <Label fx:id="time" alignment="CENTER" layoutX="1.0" layoutY="25.0" maxWidth="190.0" prefHeight="24.0" prefWidth="190.0" textFill="WHITE" />
+                    </children>
+                </Pane>
+            </children>
+        </GridPane>
+    </left>
+    <center>
+        <fx:include source="FxmlPagerSample.fxml" />
+    </center>
+</BorderPane>

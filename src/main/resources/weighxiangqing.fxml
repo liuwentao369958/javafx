@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@css/weighxiangqing.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bing.controller.ChaunkouController">
+   <children>
+      <GridPane layoutX="173.0" layoutY="98.0" prefHeight="289.0" prefWidth="549.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox prefHeight="406.0" prefWidth="700.0" style="-fx-background-color: #536DEF;">
+               <children>
+                  <GridPane prefHeight="121.0" prefWidth="760.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #868881;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Text fill="WHITE" layoutX="222.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KG" />
+                              <HBox alignment="CENTER_RIGHT" layoutY="3.0" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="ckzhongliang" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="30.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="110.0" minHeight="10.0" prefHeight="107.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane prefHeight="182.0" prefWidth="760.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="68.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="703.0" minWidth="10.0" prefWidth="620.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="67.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="82.0" minHeight="8.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="154.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="164.0" minHeight="7.0" prefHeight="14.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Pane prefHeight="148.0" prefWidth="622.0" style="-fx-background-color: #D1D5DE;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <GridPane prefHeight="161.0" prefWidth="622.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="83.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="65.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="144.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="44.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="89.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="198.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label prefHeight="19.0" prefWidth="121.0" text="订单号:  " textFill="#bf5050" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="15.0" prefWidth="122.0" text="类型:  " textFill="#bf5050" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="15.0" prefWidth="133.0" text="交易重量:" textFill="#bf5050" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="116.0" text="交易价格:" textFill="#bf5050" GridPane.columnIndex="4">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="116.0" text="提交时间:" textFill="#bf5050" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="122.0" text="采购点:" textFill="#bf5050" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fx:id="dingdanid" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" />
+                                    <Text fx:id="dingdantype" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Text fx:id="cgdian" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Text fx:id="jiage" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" />
+                                    <Text fx:id="tijiaotime" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <Text fx:id="jiaoyizhongliang" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                    <Label prefHeight="19.0" prefWidth="116.0" text="商品类型:" textFill="#bf5050" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="15.0" prefWidth="111.0" text="数量:  " textFill="#bf5050" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fx:id="producttype" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                    <Text fx:id="shuliang" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="245.0" prefWidth="760.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="33.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="107.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="248.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="35.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="92.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="188.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="67.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="62.0" minHeight="10.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="123.0" minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="141.0" minHeight="10.0" prefHeight="116.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="111.0" text="重量:  " textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="79.0" prefWidth="111.0" text="备注:  " textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="108.0" text="种植时间:  " textFill="WHITE" GridPane.columnIndex="4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="110.0" text="上市时间:  " textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="109.0" text="交易价格:  " textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="weight" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextArea fx:id="remark" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <DatePicker fx:id="planting_time" GridPane.columnIndex="5" />
+                        <DatePicker fx:id="trading_hour" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <TextField fx:id="transaction_value" GridPane.columnIndex="2" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <children>
+                              <Button fx:id="cencel" layoutY="87.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="63.0" text="取消" />
+                              <Button fx:id="affirm" layoutX="124.0" layoutY="87.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="63.0" text="保存" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

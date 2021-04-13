@@ -1,0 +1,85 @@
+.table-view .table-row-cell:even {
+    -fx-background: white;
+}
+
+.table-view .table-row-cell:odd  {
+    -fx-background: #DCDCDC;
+}
+
+.table-view .table-row-cell:empty {
+    -fx-background: white;
+}
+
+
+.table-view .table-row-cell {
+
+    -fx-background-insets: 0;
+
+}
+.table-view .table-row-cell .table-cell {
+
+    -fx-border-width: 0px;
+
+}
+/**
+*表格边框颜色
+*/
+.table-view *.column-header-background { /* FX theme stylesheet */
+
+    -fx-background-color: #A6A6A6;
+
+    -fx-background-insets: 0px, 0px;
+
+}
+/**
+ * 表头背景颜色变化
+ */
+.table-column .label{
+    -fx-background-color: #A6A6A6;
+    -fx-text-fill: white ;
+    -fx-text-alignment: center ;
+    -fx-graphic-text-gap:0;
+
+}
+/**
+ * 调节padding
+ */
+.table-column{
+    -fx-padding:0;
+}
+.table-view:row-selection .column-header-background .filler{
+   /* visibility: false;*/
+    -fx-background-color: #A6A6A6;
+}
+
+/*设置表格头靠左、字体大小，字体颜色*/
+.table-view .column-header .label{
+    -fx-alignment: center;
+    -fx-font-size: 15px;
+   /* -fx-font-weight: normal;*/
+    -fx-background-color: #A6A6A6;
+
+}
+
+/*设置表格头高度*/
+.table-view > .column-header-background {
+    -fx-pref-height: 35;
+
+}
+
+/*设置每一列内容居中，每一行高度*/
+.table-row-cell{
+    -fx-cell-size: 44.6px;
+    -fx-alignment: center;
+}
+
+#table{
+    -fx-table-cell-border-color:transparent;
+    -fx-alignment: center;
+    -fx-font-size: 14px;
+}
+
+/*设置每一列内容居中*/
+#table .table-column{
+    -fx-alignment: center;
+}

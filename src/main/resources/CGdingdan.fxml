@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="895.0" stylesheets="@css/tableview.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bing.controller.CGdingdanController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="895.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane minHeight="50.0" prefHeight="93.0" prefWidth="895.0">
+               <children>
+                  <TextField fx:id="searchID" onKeyReleased="#search" prefHeight="30.0" promptText="请输入订单号" GridPane.columnIndex="1" />
+                  <VBox maxHeight="30.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="102.0" GridPane.columnIndex="6">
+                     <children>
+                        <Button fx:id="searchBtn" mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="100.0" text="搜索" />
+                     </children>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </VBox>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="85.0" text="订单号查找:" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="95.0" text="订单名查找:" GridPane.columnIndex="2" />
+                  <TextField fx:id="searchName" onKeyReleased="#search" prefHeight="30.0" promptText="输入订单名" GridPane.columnIndex="3" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="109.0" text="订单分类查找:" GridPane.columnIndex="4" />
+                  <ComboBox fx:id="searchType" prefHeight="30.0" prefWidth="118.0" GridPane.columnIndex="5" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="85.0" text="初始日期:" GridPane.rowIndex="1" />
+                  <DatePicker fx:id="searchkaishitime" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <DatePicker fx:id="searchjieshutime" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="130.0" text="状态:" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="searchStat" prefWidth="150.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="20.0" prefWidth="78.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="123.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="20.0" prefWidth="107.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="20.0" prefWidth="128.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="20.0" prefWidth="104.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="20.0" prefWidth="163.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="20.0" prefWidth="188.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <VBox fx:id="tableBox" prefHeight="700.0" prefWidth="800.0">
+               <children>
+                  <TableView fx:id="table" prefHeight="500.0" prefWidth="895.0">
+                     <columns>
+                        <TableColumn fx:id="id" prefWidth="156.0" text="订单号" />
+                        <TableColumn fx:id="name" prefWidth="97.0" text="订单名" />
+                        <TableColumn fx:id="type" prefWidth="97.0" text="订单类型" />
+                        <TableColumn fx:id="amount" prefWidth="70.0" text="数量" />
+                        <TableColumn fx:id="state" prefWidth="51.0" text="状态" />
+                        <TableColumn fx:id="newtime" prefWidth="166.0" text="创建时间" />
+                        <TableColumn fx:id="phone" prefWidth="107.0" text="采购点" />
+                        <TableColumn prefWidth="120.0" text="查看详情" fx:id="xiangqing" />
+                     </columns>
+                     <contextMenu>
+                        <ContextMenu fx:id="itemContextMenu">
+                           <items>
+                              <MenuItem fx:id="removeItem" mnemonicParsing="false" onAction="#remove" text="删除" />
+                           </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+               </children>
+            </VBox>
+            <Pagination fx:id="pager" prefHeight="550.0" prefWidth="895.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

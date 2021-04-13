@@ -1,0 +1,20 @@
+#caidan{
+    -fx-background-color: #3D4569;
+}
+#candantop{
+    -fx-background-color: #3D4569;
+
+}
+
+#candantop ImageView{
+    -fx-image: url("/images/user.png");
+}
+
+#logout{
+    /*设置背景颜色渐变*/
+    -fx-background-color: linear-gradient(to right,#00fffc,#fff600);
+
+    /*设置圆角*/
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+}

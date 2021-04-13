@@ -1,0 +1,9 @@
+
+#upButton{
+    /*设置背景颜色渐变*/
+    -fx-background-color: linear-gradient(to right,#00fffc,#fff600);
+
+    /*设置圆角*/
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+}
